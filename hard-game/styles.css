@@ -1,0 +1,227 @@
+/* Hard Game Page Specific Styles */
+
+.game-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.timer-label {
+    font-weight: bold;
+}
+
+.timer-value {
+    font-family: 'Courier New', monospace;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.sudoku-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 0;
+    border: 3px solid #2c3e50;
+    background-color: #fff;
+    max-width: 540px;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.cell {
+    width: 100%;
+    aspect-ratio: 1;
+    border: 1px solid #bdc3c7;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+    cursor: text;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input.cell {
+    color: #2c3e50;
+}
+
+input.cell:not([readonly]) {
+    color: #2c3e50;
+    -webkit-text-fill-color: #2c3e50;
+}
+
+.cell:not([readonly]) {
+    color: #2c3e50;
+    pointer-events: auto;
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+}
+
+.cell:not([readonly])::placeholder {
+    color: transparent;
+}
+
+.cell:not([readonly]):focus {
+    color: #2c3e50;
+}
+
+input.cell:not([readonly]):focus {
+    color: #2c3e50;
+}
+
+input.cell:not([readonly])::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input.cell:not([readonly])::-moz-placeholder {
+    color: transparent;
+}
+
+input.cell:not([readonly]):-ms-input-placeholder {
+    color: transparent;
+}
+
+/* Ensure typed text is always visible */
+input[type="number"].cell:not([readonly]) {
+    color: #2c3e50;
+    -webkit-text-fill-color: #2c3e50;
+    caret-color: #3498db;
+    opacity: 1;
+    background-color: #fff;
+}
+
+input[type="number"].cell:not([readonly]):focus {
+    color: #2c3e50;
+    -webkit-text-fill-color: #2c3e50;
+    caret-color: #3498db;
+    opacity: 1;
+    background-color: #e8f4f8;
+}
+
+/* Ensure value is visible when typed */
+input[type="number"].cell:not([readonly])[value],
+input[type="number"].cell:not([readonly]):not(:placeholder-shown),
+input[type="number"].cell:not([readonly]):valid {
+    color: #2c3e50;
+    -webkit-text-fill-color: #2c3e50;
+}
+
+/* Force text visibility - override any browser defaults */
+input[type="number"].cell:not([readonly])::-webkit-textfield-decoration-container {
+    visibility: visible;
+}
+
+input[type="number"].cell:not([readonly])::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"].cell:not([readonly]):active {
+    color: #2c3e50;
+    -webkit-text-fill-color: #2c3e50;
+}
+
+input[type="number"].cell:not([readonly])::selection {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Force text visibility in all browsers */
+input[type="number"].cell:not([readonly])::-webkit-input-placeholder {
+    color: transparent;
+    opacity: 0;
+}
+
+input[type="number"].cell:not([readonly])::-moz-placeholder {
+    color: transparent;
+    opacity: 0;
+}
+
+.cell:not([readonly]):hover {
+    background-color: #f0f8ff;
+}
+
+.cell:not([readonly]):focus {
+    background-color: #e8f4f8;
+    outline: 2px solid #3498db;
+    outline-offset: -2px;
+    border-color: #3498db;
+}
+
+.cell[readonly] {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-weight: bold;
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+}
+
+.cell.border-right {
+    border-right: 3px solid #2c3e50;
+}
+
+.cell.border-top {
+    border-top: 3px solid #2c3e50;
+}
+
+/* Remove number input arrows */
+.cell::-webkit-inner-spin-button,
+.cell::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cell {
+    -moz-appearance: textfield;
+}
+
+@media (max-width: 768px) {
+    .sudoku-grid {
+        max-width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .cell {
+        font-size: 1.2rem;
+    }
+
+    .timer {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cell {
+        font-size: 1rem;
+    }
+
+    .timer {
+        font-size: 1rem;
+    }
+}

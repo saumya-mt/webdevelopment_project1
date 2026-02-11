@@ -1,0 +1,141 @@
+/* Rules Page Specific Styles */
+
+.rules-content {
+    margin: 2rem 0;
+}
+
+.rules-section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.rules-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.rules-section h3 {
+    color: #34495e;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.rules-section h4 {
+    color: #34495e;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.rules-section > p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.rules-list {
+    padding-left: 2rem;
+    line-height: 2;
+    color: #555;
+}
+
+.rules-list li {
+    margin-bottom: 0.5rem;
+}
+
+.tips-list {
+    padding-left: 2rem;
+    line-height: 2;
+    color: #555;
+    list-style-type: disc;
+}
+
+.tips-list li {
+    margin-bottom: 0.5rem;
+}
+
+.grid-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.grid-type {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-type h4 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+}
+
+.grid-type p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.credits-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    color: white;
+}
+
+.credits-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.credits-section p {
+    margin-bottom: 0.8rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.credits-links {
+    margin-top: 1.5rem;
+}
+
+.credits-links a {
+    color: #ecf0f1;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.credits-links a:hover {
+    color: #3498db;
+}
+
+@media (max-width: 768px) {
+    .rules-section {
+        padding: 1rem;
+    }
+
+    .rules-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .rules-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .grid-info {
+        grid-template-columns: 1fr;
+    }
+
+    .credits-section {
+        padding: 1.5rem;
+    }
+
+    .credits-section h2 {
+        font-size: 1.5rem;
+    }
+}

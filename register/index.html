@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Master - Register</title>
+    <link rel="stylesheet" href="../common/styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../" class="navbar-title">
+            <img src="../common/logo.svg" alt="Sudoku Master" class="navbar-logo">
+            Sudoku Master
+        </a>
+        <ul class="navbar-links">
+            <li><a href="../">Home</a></li>
+            <li><a href="../selection/">Games</a></li>
+            <li><a href="../easy-game/">Easy</a></li>
+            <li><a href="../hard-game/">Hard</a></li>
+            <li><a href="../rules/">Rules</a></li>
+            <li><a href="../high-scores/">High Scores</a></li>
+            <li><a href="../login/">Login</a></li>
+            <li><a href="./" class="active">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Register</h1>
+        
+        <div class="form-container">
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="verify-password">Verify Password</label>
+                    <input type="password" id="verify-password" name="verify-password" placeholder="Confirm your password" required>
+                </div>
+                
+                <button type="submit" class="submit-button">Register</button>
+            </form>
+            
+            <div class="form-footer">
+                <p>Already have an account? <a href="../login/">Login here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+/* Common Styles for Sudoku Website */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding-top: 80px;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-title {
+    color: #ecf0f1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-logo {
+    height: 36px;
+    width: 36px;
+    vertical-align: middle;
+}
+
+.navbar-title:hover {
+    transform: scale(1.05);
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navbar-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+}
+
+.navbar-links a.active {
+    background-color: #3498db;
+    font-weight: bold;
+}
+
+/* Main Content Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #3498db;
+}
+
+/* Button Styles */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Input Styles */
+input {
+    padding: 0.75rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+/* Exclude Sudoku cells from general input styles */
+input.cell {
+    padding: 0;
+    border-radius: 0;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+input.cell:focus {
+    outline: 2px solid #3498db;
+    outline-offset: -2px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .navbar-links a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    body {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-title {
+        font-size: 1.2rem;
+    }
+
+    .navbar-links {
+        gap: 0.3rem;
+    }
+
+    .navbar-links a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2c3e50;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}

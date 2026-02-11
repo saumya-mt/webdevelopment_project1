@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Master - Easy Game</title>
+    <link rel="stylesheet" href="../common/styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../" class="navbar-title">
+            <img src="../common/logo.svg" alt="Sudoku Master" class="navbar-logo">
+            Sudoku Master
+        </a>
+        <ul class="navbar-links">
+            <li><a href="../">Home</a></li>
+            <li><a href="../selection/">Games</a></li>
+            <li><a href="./" class="active">Easy</a></li>
+            <li><a href="../hard-game/">Hard</a></li>
+            <li><a href="../rules/">Rules</a></li>
+            <li><a href="../high-scores/">High Scores</a></li>
+            <li><a href="../login/">Login</a></li>
+            <li><a href="../register/">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Easy Game - 6x6 Sudoku</h1>
+        
+        <div class="game-header">
+            <div class="timer">
+                <span class="timer-label">Time:</span>
+                <span class="timer-value">05:23</span>
+            </div>
+        </div>
+
+        <div class="sudoku-container">
+            <div class="sudoku-grid" id="sudoku-grid-6x6">
+                <!-- Row 1 -->
+                <input type="number" min="1" max="6" value="3" class="cell" readonly>
+                <input type="number" min="1" max="6" class="cell">
+                <input type="number" min="1" max="6" value="2" class="cell border-right" readonly>
+                <input type="number" min="1" max="6" class="cell">
+                <input type="number" min="1" max="6" value="5" class="cell" readonly>
+                <input type="number" min="1" max="6" class="cell">
+
+                <!-- Row 2 -->
+                <input type="number" min="1" max="6" class="cell">
+                <input type="number" min="1" max="6" value="5" class="cell" readonly>
+                <input type="number" min="1" max="6" class="cell border-right">
+                <input type="number" min="1" max="6" value="1" class="cell" readonly>
+                <input type="number" min="1" max="6" class="cell">
+                <input type="number" min="1" max="6" value="4" class="cell" readonly>
+
+                <!-- Row 3 -->
+                <input type="number" min="1" max="6" value="1" class="cell" readonly>
+                <input type="number" min="1" max="6" class="cell">
+                <input type="number" min="1" max="6" class="cell border-right">
+                <input type="number" min="1" max="6" class="cell">
+                <input type="number" min="1" max="6" value="3" class="cell" readonly>
+                <input type="number" min="1" max="6" class="cell">
+
+                <!-- Row 4 -->
+                <input type="number" min="1" max="6" class="cell border-top">
+                <input type="number" min="1" max="6" value="4" class="cell border-top" readonly>
+                <input type="number" min="1" max="6" class="cell border-top border-right">
+                <input type="number" min="1" max="6" value="6" class="cell border-top" readonly>
+                <input type="number" min="1" max="6" class="cell border-top">
+                <input type="number" min="1" max="6" class="cell border-top">
+
+                <!-- Row 5 -->
+                <input type="number" min="1" max="6" value="6" class="cell" readonly>
+                <input type="number" min="1" max="6" class="cell">
+                <input type="number" min="1" max="6" value="3" class="cell border-right" readonly>
+                <input type="number" min="1" max="6" class="cell">
+                <input type="number" min="1" max="6" value="2" class="cell" readonly>
+                <input type="number" min="1" max="6" class="cell">
+
+                <!-- Row 6 -->
+                <input type="number" min="1" max="6" class="cell">
+                <input type="number" min="1" max="6" value="2" class="cell" readonly>
+                <input type="number" min="1" max="6" class="cell border-right">
+                <input type="number" min="1" max="6" class="cell">
+                <input type="number" min="1" max="6" value="1" class="cell" readonly>
+                <input type="number" min="1" max="6" value="5" class="cell" readonly>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
