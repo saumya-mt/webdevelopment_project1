@@ -1,6 +1,6 @@
 # Sudoku Master
 
-Mock Sudoku website for a web dev assignment—HTML and CSS only.
+Mock Sudoku website for a web dev assignment - HTML and CSS only.
 
 ## Links
 
@@ -8,9 +8,10 @@ Mock Sudoku website for a web dev assignment—HTML and CSS only.
 
 **Repo:** [https://github.com/saumya-mt/webdevelopment_project1](https://github.com/saumya-mt/webdevelopment_project1)
 
-**Collaborators:** _add if any_
+**Collaborators:** None
 
-**Video walkthrough:** _add link_
+**Video walkthrough:** https://northeastern-my.sharepoint.com/personal/mishra_sau_northeastern_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fmishra%5Fsau%5Fnortheastern%5Fedu%2FDocuments%2FRecordings%2FWeb%20Development%20%2D%20Project1%2D20260207%5F161927%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E1937a831%2Dfe3f%2D4ec5%2Db834%2D0f0ec70ce7ab
+
 
 ---
 
@@ -30,7 +31,7 @@ I wanted the colors to feel consistent, so I used a purple/blue gradient and a d
 
 **Given more time, what would you add?**
 
-I’d add JavaScript to validate the Sudoku inputs (only 1–6 or 1–9), make the timer actually run, and maybe generate puzzles. The login and register pages would need a backend to do anything useful. Dark mode and keyboard shortcuts would be nice. And I’d improve accessibility so more people can use it easily.
+I’d add JavaScript to validate the Sudoku inputs (only 1-6 or 1-9), make the timer actually run, and maybe generate puzzles. The login and register pages would need a backend to do anything useful. Dark mode and keyboard shortcuts would be nice. And I’d improve accessibility so more people can use it easily.
 
 **How many hours did you spend on this assignment?**
 
